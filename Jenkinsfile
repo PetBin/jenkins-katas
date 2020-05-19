@@ -20,7 +20,7 @@ pipeline {
             sh 'ls'
             sh 'ci/build-app.sh'
             archiveArtifacts 'app/build/libs/'
-            DeleteDir()
+            deleteDir()
             sh 'ls'
           }
         }
